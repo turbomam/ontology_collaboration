@@ -11,9 +11,7 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://example.org/ovs.owl">
-        <rdfs:comment>proposals regarding an ordinal value specification</rdfs:comment>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://example.org/ovs.owl"/>
     
 
 
@@ -1058,34 +1056,6 @@ Also considered as examples:  Histological tumor grading and mineral hardness.  
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Miller</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-15T20:34:40Z</dc:date>
         <rdfs:label>ordinal value specification with missing value option</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/ovs.owl/missValSpec -->
-
-    <owl:Class rdf:about="http://example.org/ovs.owl/missValSpec">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Miller</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T16:42:48Z</dc:date>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/ovs.owl/ordValMissHybrid -->
-
-    <owl:Class rdf:about="http://example.org/ovs.owl/ordValMissHybrid">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://example.org/ovs.owl/OBI_0002930"/>
-                    <rdf:Description rdf:about="http://example.org/ovs.owl/missValSpec"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://example.org/ovs.owl/OBI_0002930"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Miller</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T16:43:07Z</dc:date>
     </owl:Class>
     
 
